@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/GLExtensionLogin">
+        <file>Icons/Login.png</file>
+        <file>Icons/ZZLoginViewControls_delHistoryName.png</file>
+        <file>Icons/inputUsernameNone.png</file>
+        <file>Icons/inputUsername.png</file>
+        <file>Icons/inputPasswordNone.png</file>
+        <file>Icons/inputPassword.png</file>
+        <file>Icons/close.png</file>
+        <file>Icons/noUsbkey.png</file>
+        <file>Icons/drowDownHistoryName.png</file>
+        <file>Icons/loginChecked.png</file>
+        <file>Icons/loginbg.png</file>
+        <file>Icons/insertUsbKey.png</file>
+        <file>Icons/loginUnchecked.png</file>
+        <file>Icons/foldUpHistoryName.png</file>
+        <file>Icons/logo.png</file>
+        <file>Icons/checked.png</file>
+        <file>Icons/unchecked.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>qGLChooseItem</class>
+ <widget class="QWidget" name="qGLChooseItem">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>380</width>
+    <height>220</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="btnDelete1">
+   <property name="geometry">
+    <rect>
+     <x>136</x>
+     <y>54</y>
+     <width>32</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnRegistIcon">
+   <property name="geometry">
+    <rect>
+     <x>12</x>
+     <y>50</y>
+     <width>160</width>
+     <height>160</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-width: 1px; border-style: dashed; border-color: white white white white; </string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnTransmitIcon">
+   <property name="geometry">
+    <rect>
+     <x>208</x>
+     <y>48</y>
+     <width>160</width>
+     <height>160</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-width: 1px; border-style: dashed; border-color: white white white white; </string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="editTransmitName">
+   <property name="geometry">
+    <rect>
+     <x>208</x>
+     <y>10</y>
+     <width>160</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">padding: 0px 12px;
+background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>CT</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="editRegistName">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>10</y>
+     <width>161</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">padding: 0px 12px;
+background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>Flair</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblBg1">
+   <property name="geometry">
+    <rect>
+     <x>12</x>
+     <y>48</y>
+     <width>160</width>
+     <height>160</height>
+    </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: #1C2C5B;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblBg2">
+   <property name="geometry">
+    <rect>
+     <x>208</x>
+     <y>48</y>
+     <width>160</width>
+     <height>160</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: #1C2C5B;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>lblBg1</zorder>
+  <zorder>lblBg2</zorder>
+  <zorder>btnRegistIcon</zorder>
+  <zorder>btnTransmitIcon</zorder>
+  <zorder>btnDelete1</zorder>
+  <zorder>editTransmitName</zorder>
+  <zorder>editRegistName</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

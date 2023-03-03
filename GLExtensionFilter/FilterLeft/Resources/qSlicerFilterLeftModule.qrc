@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Icons/FilterLeft.png</file>
+        <file>Icons/add.png</file>
+        <file>Icons/remove.png</file>
+    </qresource>
+</RCC>

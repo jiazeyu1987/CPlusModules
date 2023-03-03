@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/Resources">
+        <file>Icons/Output.png</file>
+        <file>Icons/resultNoSelectedBkg.png</file>
+        <file>Icons/resultSelectedBkg.png</file>
+        <file>Icons/headstock1.png</file>
+        <file>Icons/headstock2.png</file>
+        <file>Icons/headstock3.png</file>
+        <file>Icons/surgeryPlanReoprtExit.png</file>
+    </qresource>
+</RCC>

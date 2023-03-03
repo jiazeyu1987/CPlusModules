@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/Resources">
+        <file>Icons/TopMenu.png</file>
+        <file>Icons/topmenu_exit.png</file>
+        <file>Icons/topmenu_help.png</file>
+        <file>Icons/topmenu_quit.png</file>
+        <file>Icons/topmenu_save.png</file>
+        <file>Icons/topmenu_setting.png</file>
+        <file>Icons/patientIcon.png</file>
+        <file>Icons/GLlogo.png</file>
+        <file>Icons/current.png</file>
+        <file>Icons/last.png</file>
+        <file>Icons/next.png</file>
+    </qresource>
+</RCC>

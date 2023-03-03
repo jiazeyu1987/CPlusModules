@@ -1,0 +1,2345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>qSlicerNaviModuleWidget</class>
+ <widget class="qSlicerWidget" name="qSlicerNaviModuleWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>584</width>
+    <height>914</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>556</width>
+    <height>835</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>QmitkTemplate</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>19</y>
+     <width>555</width>
+     <height>861</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>55</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>555</width>
+     <height>830</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>560</width>
+     <height>100000</height>
+    </size>
+   </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑 Light</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+          QTabBar::tab{width:105}
+          QTabBar::tab{height:50}
+        </string>
+   </property>
+   <property name="tabShape">
+    <enum>QTabWidget::Rounded</enum>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <property name="usesScrollButtons">
+    <bool>false</bool>
+   </property>
+   <widget class="QWidget" name="tabModelList">
+    <attribute name="title">
+     <string>图像列表</string>
+    </attribute>
+    <widget class="QTabWidget" name="tabWidgetModel">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>556</width>
+       <height>801</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <horstretch>55</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>556</width>
+       <height>450</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>556</width>
+       <height>990</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>Algerian</family>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+              QTabBar::tab{width:100}
+              QTabBar::tab{height:0}
+            </string>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <property name="usesScrollButtons">
+      <bool>false</bool>
+     </property>
+     <property name="tabsClosable">
+      <bool>false</bool>
+     </property>
+     <property name="tabBarAutoHide">
+      <bool>false</bool>
+     </property>
+     <widget class="QWidget" name="tabModelView">
+      <attribute name="title">
+       <string>模型显示</string>
+      </attribute>
+      <widget class="QTabWidget" name="tabWidget_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>100</y>
+         <width>561</width>
+         <height>591</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+                  QTabBar::tab{width:0}
+                  QTabBar::tab{height:0}
+                </string>
+       </property>
+       <property name="currentIndex">
+        <number>1</number>
+       </property>
+       <property name="usesScrollButtons">
+        <bool>false</bool>
+       </property>
+       <widget class="QWidget" name="tab2D">
+        <attribute name="title">
+         <string>2D</string>
+        </attribute>
+        <widget class="QListWidget" name="listWidget2DMode">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>551</width>
+           <height>591</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>556</width>
+           <height>800</height>
+          </size>
+         </property>
+         <property name="verticalScrollBarPolicy">
+          <enum>Qt::ScrollBarAlwaysOn</enum>
+         </property>
+         <property name="horizontalScrollBarPolicy">
+          <enum>Qt::ScrollBarAlwaysOff</enum>
+         </property>
+         <property name="verticalScrollMode">
+          <enum>QAbstractItemView::ScrollPerPixel</enum>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab3D">
+        <attribute name="title">
+         <string>3D</string>
+        </attribute>
+        <widget class="QListWidget" name="listWidget3DMode">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>551</width>
+           <height>591</height>
+          </rect>
+         </property>
+         <property name="verticalScrollBarPolicy">
+          <enum>Qt::ScrollBarAlwaysOn</enum>
+         </property>
+         <property name="horizontalScrollBarPolicy">
+          <enum>Qt::ScrollBarAlwaysOff</enum>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="btnNew3DModel">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>540</y>
+           <width>491</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>微软雅黑 Light</family>
+           <pointsize>14</pointsize>
+          </font>
+         </property>
+         <property name="text">
+          <string>新建模型</string>
+         </property>
+         <property name="flat">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QTabWidget" name="tabWidgetAdjust">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>690</y>
+         <width>555</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>555</width>
+         <height>86</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>556</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+                  QTabBar::tab{width:80}
+                  QTabBar::tab{height:0}
+                </string>
+       </property>
+       <property name="currentIndex">
+        <number>1</number>
+       </property>
+       <property name="tabBarAutoHide">
+        <bool>false</bool>
+       </property>
+       <widget class="QWidget" name="tabFusion">
+        <attribute name="title">
+         <string>融合</string>
+        </attribute>
+        <widget class="QWidget" name="widgetSliderBkg" native="true">
+         <property name="geometry">
+          <rect>
+           <x>120</x>
+           <y>20</y>
+           <width>401</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>250</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>4000</width>
+           <height>4000</height>
+          </size>
+         </property>
+         <widget class="QLabel" name="label">
+          <property name="geometry">
+           <rect>
+            <x>15</x>
+            <y>10</y>
+            <width>41</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QSlider" name="hSliderFusionRatio">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>10</y>
+            <width>301</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximum">
+           <number>100</number>
+          </property>
+          <property name="value">
+           <number>50</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="lineEditFusionRatio">
+          <property name="geometry">
+           <rect>
+            <x>340</x>
+            <y>0</y>
+            <width>40</width>
+            <height>38</height>
+           </rect>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>38</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>50</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_8">
+          <property name="geometry">
+           <rect>
+            <x>380</x>
+            <y>10</y>
+            <width>21</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>%</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QPushButton" name="pushButton_3">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>20</y>
+           <width>111</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="text">
+          <string>融合比例</string>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tabVolume">
+        <attribute name="title">
+         <string>容积</string>
+        </attribute>
+        <widget class="QPushButton" name="btnBackVolumn">
+         <property name="geometry">
+          <rect>
+           <x>370</x>
+           <y>70</y>
+           <width>91</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>返回</string>
+         </property>
+        </widget>
+        <widget class="QGroupBox" name="groupBox">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>-1</y>
+           <width>471</width>
+           <height>61</height>
+          </rect>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="title">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <widget class="QLabel" name="label_9">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>161</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>容积再现</string>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="comboBox">
+          <property name="geometry">
+           <rect>
+            <x>270</x>
+            <y>10</y>
+            <width>191</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>30</height>
+           </size>
+          </property>
+          <item>
+           <property name="text">
+            <string>CT Generic</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>CT Black&amp;White</string>
+           </property>
+          </item>
+         </widget>
+        </widget>
+        <widget class="QCheckBox" name="checkBox_3">
+         <property name="geometry">
+          <rect>
+           <x>60</x>
+           <y>70</y>
+           <width>71</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>PET</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QPushButton" name="btn2D">
+       <property name="geometry">
+        <rect>
+         <x>52</x>
+         <y>20</y>
+         <width>200</width>
+         <height>60</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>2D</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn3D">
+       <property name="geometry">
+        <rect>
+         <x>303</x>
+         <y>20</y>
+         <width>200</width>
+         <height>60</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>3D</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnAllUnvisible">
+       <property name="geometry">
+        <rect>
+         <x>260</x>
+         <y>70</y>
+         <width>30</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tabModelStructration">
+      <attribute name="title">
+       <string>建模结构</string>
+      </attribute>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>551</width>
+         <height>831</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <layout class="QHBoxLayout" name="hLayoutStructure" stretch="1,8,1">
+          <item>
+           <widget class="QPushButton" name="btnBack2View">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑 Light</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>&lt;</string>
+            </property>
+            <property name="flat">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_4">
+            <property name="font">
+             <font>
+              <family>微软雅黑 Light</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>选择建模结构</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_5">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QListWidget" name="listWidgetStructure">
+          <property name="verticalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOn</enum>
+          </property>
+          <property name="horizontalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+          <property name="verticalScrollMode">
+           <enum>QAbstractItemView::ScrollPerPixel</enum>
+          </property>
+          <property name="spacing">
+           <number>5</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tabModelSequence">
+      <attribute name="title">
+       <string>建模序列</string>
+      </attribute>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>551</width>
+         <height>831</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <layout class="QHBoxLayout" name="hLayoutSequence" stretch="1,8,1">
+          <item>
+           <widget class="QPushButton" name="btnBack2Struct">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑 Light</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>&lt;</string>
+            </property>
+            <property name="flat">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_5">
+            <property name="font">
+             <font>
+              <family>微软雅黑 Light</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>选择建模序列</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_4">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QListWidget" name="listWidgetSequence">
+          <property name="verticalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOn</enum>
+          </property>
+          <property name="horizontalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+          <property name="verticalScrollMode">
+           <enum>QAbstractItemView::ScrollPerPixel</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tabModelSetting">
+      <attribute name="title">
+       <string>建模设置</string>
+      </attribute>
+      <widget class="QTabWidget" name="tabWidgetTools">
+       <property name="geometry">
+        <rect>
+         <x>1</x>
+         <y>889</y>
+         <width>549</width>
+         <height>1</height>
+        </rect>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>1</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>微软雅黑 Light</family>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+                        QTabBar::tab{width:170}
+                        QTabBar::tab{height:30}
+                      </string>
+       </property>
+       <property name="currentIndex">
+        <number>2</number>
+       </property>
+       <widget class="QWidget" name="tab_3">
+        <attribute name="title">
+         <string>区域生长</string>
+        </attribute>
+        <widget class="QPushButton" name="btnSegmentation">
+         <property name="geometry">
+          <rect>
+           <x>310</x>
+           <y>130</y>
+           <width>200</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>分割</string>
+         </property>
+        </widget>
+        <widget class="QWidget" name="widgetThreshold" native="true">
+         <property name="geometry">
+          <rect>
+           <x>20</x>
+           <y>10</y>
+           <width>493</width>
+           <height>114</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>493</width>
+           <height>114</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>493</width>
+           <height>114</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <widget class="ctkRangeWidget" name="m_ThresholdSlider" native="true">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>10</y>
+            <width>491</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+         </widget>
+         <widget class="ctkRangeWidget" name="m_ThresholdSlider_3" native="true">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>70</y>
+            <width>491</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_8">
+        <attribute name="title">
+         <string>阈值选区</string>
+        </attribute>
+        <widget class="QWidget" name="layoutWidget_2">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>30</y>
+           <width>481</width>
+           <height>61</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="hLayoutThresholds_2">
+          <item>
+           <widget class="ctkRangeWidget" name="m_DoubleThresholdSlider" native="true">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QLabel" name="label_12">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>160</y>
+           <width>251</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>按住Shift键，单击选择一个独立区域。</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_8">
+         <property name="geometry">
+          <rect>
+           <x>370</x>
+           <y>160</y>
+           <width>75</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>拾取</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="okButton">
+         <property name="geometry">
+          <rect>
+           <x>430</x>
+           <y>110</y>
+           <width>75</width>
+           <height>39</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string>拾取</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tab_9">
+        <attribute name="title">
+         <string>手动建模</string>
+        </attribute>
+        <widget class="QWidget" name="layoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>521</width>
+           <height>141</height>
+          </rect>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="0">
+           <widget class="QPushButton" name="pushButton_22">
+            <property name="text">
+             <string>添加</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QPushButton" name="pushButton_24">
+            <property name="text">
+             <string>画笔</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="pushButton_23">
+            <property name="text">
+             <string>橡皮擦</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QPushButton" name="pushButton_25">
+            <property name="text">
+             <string>切除</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="pushButton_26">
+            <property name="text">
+             <string>区域增长</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QPushButton" name="pushButton_27">
+            <property name="text">
+             <string>磁力选择</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>3</x>
+         <y>3</y>
+         <width>551</width>
+         <height>782</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <layout class="QHBoxLayout" name="hLayoutSequence_2" stretch="1,8,2">
+          <item>
+           <widget class="QPushButton" name="btnBack2Sequence">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="font">
+             <font>
+              <family>微软雅黑 Light</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>&lt;</string>
+            </property>
+            <property name="flat">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_6">
+            <property name="font">
+             <font>
+              <family>微软雅黑 Light</family>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="text">
+             <string>建模设置</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="example_item_widget_layout" stretch="0">
+          <item>
+           <widget class="QLabel" name="lblImage">
+            <property name="minimumSize">
+             <size>
+              <width>1</width>
+              <height>120</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>1</width>
+              <height>120</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Image</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="qSlicerNaviFrameWidget" name="EffectsWidget" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>550</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnOK">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>确定</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnCancel">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>取消</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tabOpticalFiber">
+    <attribute name="title">
+     <string>光纤信息</string>
+    </attribute>
+    <widget class="QTabWidget" name="tabWidgetFiber">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>555</width>
+       <height>941</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+              QTabBar::tab{width:277}
+              QTabBar::tab{height:0}
+            </string>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tabVirtualFiber">
+      <attribute name="title">
+       <string>虚拟光纤</string>
+      </attribute>
+      <widget class="QListWidget" name="listWidgetOpticalFiber">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>556</width>
+         <height>541</height>
+        </rect>
+       </property>
+       <property name="verticalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOn</enum>
+       </property>
+       <property name="horizontalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
+       </property>
+       <property name="verticalScrollMode">
+        <enum>QAbstractItemView::ScrollPerPixel</enum>
+       </property>
+       <property name="spacing">
+        <number>3</number>
+       </property>
+      </widget>
+      <widget class="QWidget" name="widget" native="true">
+       <property name="geometry">
+        <rect>
+         <x>-20</x>
+         <y>540</y>
+         <width>561</width>
+         <height>471</height>
+        </rect>
+       </property>
+       <widget class="QTabWidget" name="tabWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>0</y>
+          <width>541</width>
+          <height>271</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <property name="tabBarAutoHide">
+         <bool>false</bool>
+        </property>
+        <widget class="QWidget" name="tab">
+         <attribute name="title">
+          <string>Tab 1</string>
+         </attribute>
+         <widget class="QWidget" name="layoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>2</x>
+            <y>10</y>
+            <width>531</width>
+            <height>231</height>
+           </rect>
+          </property>
+          <layout class="QGridLayout" name="gridLayout">
+           <item row="1" column="2">
+            <widget class="QPushButton" name="pushButton_18">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>160</width>
+               <height>48</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>160</width>
+               <height>48</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>消融评估</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QPushButton" name="pushButton_20">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>160</width>
+               <height>48</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>160</width>
+               <height>48</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>颅骨去除</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QPushButton" name="pushButton_12">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>160</width>
+               <height>48</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>160</width>
+               <height>48</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>坐标调整</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0" colspan="3">
+            <widget class="QPushButton" name="btnNewOptFiber">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>48</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>48</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>微软雅黑 Light</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>+新建光纤</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QComboBox" name="cmbDir">
+             <property name="minimumSize">
+              <size>
+               <width>160</width>
+               <height>48</height>
+              </size>
+             </property>
+             <property name="editable">
+              <bool>false</bool>
+             </property>
+             <property name="currentText">
+              <string>请选择视角</string>
+             </property>
+             <property name="currentIndex">
+              <number>0</number>
+             </property>
+             <item>
+              <property name="text">
+               <string>请选择视角</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>一般视角</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>针道视角</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>手术视角</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QPushButton" name="pushButton_19">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>160</width>
+               <height>48</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>160</width>
+               <height>48</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>路径微调</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QPushButton" name="pushButton_11">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>160</width>
+               <height>48</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>160</width>
+               <height>48</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>消融区添加</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QPushButton" name="pushButton_28">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>160</width>
+               <height>48</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>160</width>
+               <height>48</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>坐标定位</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QPushButton" name="pushButton_13">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>160</width>
+               <height>48</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>160</width>
+               <height>48</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>灰质分离</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="2">
+            <widget class="QPushButton" name="pushButton_14">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>160</width>
+               <height>48</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>160</width>
+               <height>48</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>头架识别</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_2">
+         <attribute name="title">
+          <string>Tab 2</string>
+         </attribute>
+         <widget class="QPushButton" name="btn_Areaback">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>30</y>
+            <width>28</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_2">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>20</y>
+            <width>391</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>使用按钮添加或者删除一个消融区</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="btn_deletedArea">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>110</y>
+            <width>59</width>
+            <height>59</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="btnWave">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>120</y>
+            <width>93</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color:#D89236;
+border-radius: 8px;</string>
+          </property>
+          <property name="text">
+           <string>980</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="btn_addArea">
+          <property name="geometry">
+           <rect>
+            <x>110</x>
+            <y>110</y>
+            <width>59</width>
+            <height>59</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="cmbAblation">
+          <property name="geometry">
+           <rect>
+            <x>319</x>
+            <y>90</y>
+            <width>111</width>
+            <height>47</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_11">
+          <property name="geometry">
+           <rect>
+            <x>320</x>
+            <y>190</y>
+            <width>131</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="btnLeft">
+          <property name="geometry">
+           <rect>
+            <x>470</x>
+            <y>135</y>
+            <width>37</width>
+            <height>37</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="btnRight">
+          <property name="geometry">
+           <rect>
+            <x>470</x>
+            <y>80</y>
+            <width>37</width>
+            <height>37</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_4">
+         <attribute name="title">
+          <string>页</string>
+         </attribute>
+         <widget class="QPushButton" name="btn_up">
+          <property name="geometry">
+           <rect>
+            <x>380</x>
+            <y>90</y>
+            <width>20</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_2">
+          <property name="geometry">
+           <rect>
+            <x>70</x>
+            <y>100</y>
+            <width>41</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="NewTarget">
+          <property name="geometry">
+           <rect>
+            <x>70</x>
+            <y>20</y>
+            <width>391</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>添加一个新的点应用到光纤的靶点</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="btn_Pathback">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>30</y>
+            <width>28</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="btn_down">
+          <property name="geometry">
+           <rect>
+            <x>380</x>
+            <y>130</y>
+            <width>20</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="btn_left">
+          <property name="geometry">
+           <rect>
+            <x>360</x>
+            <y>110</y>
+            <width>20</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="btn_target_2">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>100</y>
+            <width>100</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>修改靶点</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="btn_right">
+          <property name="geometry">
+           <rect>
+            <x>400</x>
+            <y>110</y>
+            <width>20</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_5">
+         <attribute name="title">
+          <string>页</string>
+         </attribute>
+         <widget class="QPushButton" name="btn_Pathback_2">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>30</y>
+            <width>28</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_3">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>30</y>
+            <width>81</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>横断面：</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_7">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>80</y>
+            <width>81</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>矢状面：</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_10">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>130</y>
+            <width>81</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>冠状面：</string>
+          </property>
+         </widget>
+         <widget class="QSlider" name="horizontalSlider">
+          <property name="geometry">
+           <rect>
+            <x>189</x>
+            <y>35</y>
+            <width>181</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+         <widget class="QSlider" name="horizontalSlider_2">
+          <property name="geometry">
+           <rect>
+            <x>189</x>
+            <y>85</y>
+            <width>181</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+         <widget class="QSlider" name="horizontalSlider_3">
+          <property name="geometry">
+           <rect>
+            <x>189</x>
+            <y>135</y>
+            <width>181</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_7">
+         <attribute name="title">
+          <string>页</string>
+         </attribute>
+         <widget class="qSlicerModulePanel" name="PyPanel" native="true">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>535</width>
+            <height>241</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_12">
+         <attribute name="title">
+          <string>页</string>
+         </attribute>
+         <widget class="qSlicerModulePanel" name="AblationEstimatePanel" native="true">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>535</width>
+            <height>241</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_13">
+         <attribute name="title">
+          <string>页</string>
+         </attribute>
+         <widget class="qSlicerModulePanel" name="DoctorViewPanel" native="true">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>535</width>
+            <height>241</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_14">
+         <attribute name="title">
+          <string>页</string>
+         </attribute>
+         <widget class="qSlicerModulePanel" name="GrayWhiteMatterPanel" native="true">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>535</width>
+            <height>241</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_15">
+         <attribute name="title">
+          <string>页</string>
+         </attribute>
+         <widget class="QTabWidget" name="tabWidget_4">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>80</y>
+            <width>471</width>
+            <height>151</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QTabBar::tab{
+width: 70px;
+height: 20px;
+font: 12pt;
+}</string>
+          </property>
+          <property name="currentIndex">
+           <number>1</number>
+          </property>
+          <widget class="QWidget" name="tabFrame">
+           <attribute name="title">
+            <string>Frame</string>
+           </attribute>
+           <widget class="QLabel" name="lbl1">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>5</y>
+              <width>41</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>X:</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="lblX">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>5</y>
+              <width>101</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="maxLength">
+             <number>6</number>
+            </property>
+           </widget>
+           <widget class="QLabel" name="lbl2">
+            <property name="geometry">
+             <rect>
+              <x>310</x>
+              <y>5</y>
+              <width>41</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Z:</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="lblZ">
+            <property name="geometry">
+             <rect>
+              <x>350</x>
+              <y>5</y>
+              <width>101</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="maxLength">
+             <number>6</number>
+            </property>
+           </widget>
+           <widget class="QLabel" name="lbl3">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>5</y>
+              <width>41</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Y:</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="lblY">
+            <property name="geometry">
+             <rect>
+              <x>200</x>
+              <y>5</y>
+              <width>101</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="maxLength">
+             <number>6</number>
+            </property>
+           </widget>
+           <widget class="QLabel" name="lbl4">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>45</y>
+              <width>41</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>ARC:</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="lblARC">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>45</y>
+              <width>101</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="maxLength">
+             <number>6</number>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="lblRAN">
+            <property name="geometry">
+             <rect>
+              <x>200</x>
+              <y>45</y>
+              <width>101</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="maxLength">
+             <number>6</number>
+            </property>
+           </widget>
+           <widget class="QLabel" name="lbl5">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>45</y>
+              <width>41</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>RAN:</string>
+            </property>
+           </widget>
+           <widget class="QComboBox" name="cmbDir_2">
+            <property name="geometry">
+             <rect>
+              <x>70</x>
+              <y>85</y>
+              <width>101</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <item>
+             <property name="text">
+              <string>靶上</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>靶下</string>
+             </property>
+            </item>
+           </widget>
+           <widget class="QLabel" name="lbl6">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>85</y>
+              <width>51</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>方向:</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="lbl7">
+            <property name="geometry">
+             <rect>
+              <x>180</x>
+              <y>85</y>
+              <width>51</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>方向:</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="lblDistance">
+            <property name="geometry">
+             <rect>
+              <x>270</x>
+              <y>85</y>
+              <width>71</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="maxLength">
+             <number>5</number>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="btnSub">
+            <property name="geometry">
+             <rect>
+              <x>238</x>
+              <y>85</y>
+              <width>30</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>-</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="btnAdd">
+            <property name="geometry">
+             <rect>
+              <x>342</x>
+              <y>85</y>
+              <width>30</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>+</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="btnMove">
+            <property name="geometry">
+             <rect>
+              <x>385</x>
+              <y>85</y>
+              <width>71</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>移动</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="tabACPC">
+           <attribute name="title">
+            <string>AC-PC</string>
+           </attribute>
+           <widget class="QLabel" name="lbl8">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>40</y>
+              <width>41</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>X:</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="lbl10">
+            <property name="geometry">
+             <rect>
+              <x>320</x>
+              <y>40</y>
+              <width>31</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Z:</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="lblZ2">
+            <property name="geometry">
+             <rect>
+              <x>350</x>
+              <y>40</y>
+              <width>101</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="maxLength">
+             <number>6</number>
+            </property>
+           </widget>
+           <widget class="QLabel" name="lbl12">
+            <property name="geometry">
+             <rect>
+              <x>160</x>
+              <y>40</y>
+              <width>41</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Y:</string>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="lblX2">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>40</y>
+              <width>101</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="maxLength">
+             <number>6</number>
+            </property>
+           </widget>
+           <widget class="QLineEdit" name="lblY2">
+            <property name="geometry">
+             <rect>
+              <x>200</x>
+              <y>40</y>
+              <width>101</width>
+              <height>30</height>
+             </rect>
+            </property>
+            <property name="maxLength">
+             <number>6</number>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QPushButton" name="return_to_panel">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>40</y>
+            <width>75</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>返回</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_16">
+         <attribute name="title">
+          <string>页</string>
+         </attribute>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_11">
+    <attribute name="title">
+     <string>血管</string>
+    </attribute>
+    <widget class="qSlicerModulePanel" name="VesselPanel" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>551</width>
+       <height>791</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_10">
+    <attribute name="title">
+     <string>脑区</string>
+    </attribute>
+    <widget class="qSlicerModulePanel" name="BrainSegmentPanel" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>556</width>
+       <height>260</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="qSlicerModulePanel" name="BrainSegmentDisplayPanel" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>260</y>
+       <width>556</width>
+       <height>500</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_6">
+    <attribute name="title">
+     <string>DTI</string>
+    </attribute>
+    <widget class="qSlicerModulePanel" name="DTIPanel" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>556</width>
+       <height>135</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="qSlicerModulePanel" name="DTIDisplayPanel" native="true">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>135</y>
+       <width>556</width>
+       <height>700</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>0</y>
+     <width>521</width>
+     <height>16</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>qSlicerWidget</class>
+   <extends>QWidget</extends>
+   <header>qSlicerWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>qSlicerModulePanel</class>
+   <extends>qSlicerWidget</extends>
+   <header>qSlicerModulePanel.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ctkRangeWidget</class>
+   <extends>QWidget</extends>
+   <header>ctkRangeWidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>qSlicerNaviFrameWidget</class>
+   <extends>QWidget</extends>
+   <header>qslicernaviframewidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+ <slots>
+  <slot>on_pushButton_clicked()</slot>
+ </slots>
+</ui>

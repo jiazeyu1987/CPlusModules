@@ -1,0 +1,45 @@
+# Ignore all dotfiles...
+.*
+!.gitattributes
+!.git-blame-ignore-revs
+
+# Ignore all back-up files...
+*~
+*.bak
+
+# except for .gitignore
+!.gitignore
+
+# ... and .circleci
+!.circleci
+
+# Exclude Kdevelop4 files ...
+.kdev*
+
+# Exclude QtCreator files ...
+CMakeLists.txt.user*
+
+# Ignore ctags file
+tags
+
+# Ignore pyc files ...
+*.pyc
+
+# Documentation
+Docs/_build
+Docs/_moduledescriptions
+
+DExtension/CExtension/HDBrainExtraction/qt-scripted-modules/Resources/Models
+Debug_GLExtensionFilter
+Debug_GLExtensionLogin
+Debug_GLExtensionMeasure
+Debug_GLExtensionMenu
+Debug_GLExtensionNavi
+Debug_GLExtensionPatient
+Release_GLExtensionFilter
+Release_GLExtensionLogin
+Release_GLExtensionMeasure
+Release_GLExtensionMenu
+Release_GLExtensionNavi
+Release_GLExtensionOutput
+Release_GLExtensionPatient

@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/Resources">
+        <file>Icons/OutputBottom.png</file>
+        <file>Icons/output_fiber_infobg.png</file>
+    </qresource>
+</RCC>

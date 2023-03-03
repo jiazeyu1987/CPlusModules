@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>FilterIcons/delete.png</file>
+        <file>FilterIcons/choose_item_selected.png</file>
+        <file>FilterIcons/choosed.png</file>
+        <file>FilterIcons/add.png</file>
+        <file>FilterIcons/filter.png</file>
+    </qresource>
+</RCC>

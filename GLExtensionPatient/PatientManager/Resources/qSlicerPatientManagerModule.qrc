@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/GLExtensionPatient">
+        <file>Icons/PatientManager.png</file>
+        <file>Icons/linebg.png</file>
+        <file>Icons/report_small.png</file>
+        <file>Icons/titlebg.png</file>
+        <file>Icons/onlybg.png</file>
+        <file>Icons/1.png</file>
+        <file>Icons/2.png</file>
+        <file>Icons/3.png</file>
+        <file>Icons/4.png</file>
+        <file>Icons/allUnSelected.png</file>
+        <file>Icons/allSelected.png</file>
+        <file>Icons/symbol.png</file>
+        <file>Icons/addIcon.png</file>
+		<file>Icons/AnalyIcon.png</file>
+        <file>Icons/loading_wait.png</file>
+    </qresource>
+</RCC>

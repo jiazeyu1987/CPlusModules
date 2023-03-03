@@ -1,0 +1,37 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Icons/Measure.png</file>
+        <file>Resources/Tool_Grayscale.png</file>
+        <file>Resources/Tool_Measure.png</file>
+        <file>Resources/Tool_Move.png</file>
+        <file>Resources/Tool_Reset.png</file>
+        <file>Resources/Tool_RotatePoint.png</file>
+        <file>Resources/Tool_Whirling.png</file>
+        <file>Resources/Tool_Zoomin.png</file>
+        <file>Resources/View_AllView.png</file>
+        <file>Resources/View_FourView.png</file>
+        <file>Resources/View_ThreeView.png</file>
+        <file>Resources/Clicked_Grayscale.png</file>
+        <file>Resources/Clicked_Measure.png</file>
+        <file>Resources/Clicked_Measure_Angle.png</file>
+        <file>Resources/Clicked_Measure_Area.png</file>
+        <file>Resources/Clicked_Measure_Plane.png</file>
+        <file>Resources/Clicked_Measure_Point.png</file>
+        <file>Resources/Clicked_Measure_Volume.png</file>
+        <file>Resources/Clicked_Move.png</file>
+        <file>Resources/Clicked_Reset.png</file>
+        <file>Resources/Clicked_RotatePoint.png</file>
+        <file>Resources/Clicked_Whirling.png</file>
+        <file>Resources/Clicked_Zoomin.png</file>
+        <file>Resources/Measure_Angle.png</file>
+        <file>Resources/Measure_Area.png</file>
+        <file>Resources/Measure_Plane.png</file>
+        <file>Resources/Measure_Point.png</file>
+        <file>Resources/Measure_Volume.png</file>
+        <file>Resources/Screenshot.png</file>
+        <file>Resources/Clicked_Measure_Curve.png</file>
+        <file>Resources/Clicked_Measure_Hide.png</file>
+        <file>Resources/Measure_Curve.png</file>
+        <file>Resources/Measure_Hide.png</file>
+    </qresource>
+</RCC>
