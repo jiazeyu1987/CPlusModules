@@ -68,7 +68,7 @@
    <widget class="QPushButton" name="btn_delete">
     <property name="geometry">
      <rect>
-      <x>626</x>
+      <x>910</x>
       <y>10</y>
       <width>150</width>
       <height>41</height>
@@ -81,7 +81,7 @@
    <widget class="QPushButton" name="btn_import">
     <property name="geometry">
      <rect>
-      <x>783</x>
+      <x>1070</x>
       <y>10</y>
       <width>150</width>
       <height>41</height>
@@ -94,7 +94,7 @@
    <widget class="QPushButton" name="btn_dti">
     <property name="geometry">
      <rect>
-      <x>940</x>
+      <x>750</x>
       <y>10</y>
       <width>150</width>
       <height>41</height>

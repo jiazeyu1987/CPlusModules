@@ -82,7 +82,7 @@ void qSlicerFilterTopModuleWidgetPrivate::AddItemToList(vtkMRMLScalarVolumeNode*
 	if (!filename || strcmp(filename,"")==0) {
 		filename = node->GetAttribute("filename");
 		if (!filename) {
-			return;
+			filename = "unknown";
 		}
 	}
 
@@ -260,7 +260,13 @@ void qSlicerFilterTopModuleWidget::enter() {
 	}
 	qDebug() << "top filter logic modify connect";
 	qvtkReconnect(logic(), vtkCommand::ModifiedEvent, this, SLOT(onLogicModified(vtkObject*, vtkObject*)));
+
+	QTimer::singleShot(0, this, [this]() {
+		InitWidgetListFromDicomCollection(true); 
+		}); 
 }
+
+
 
 
 void qSlicerFilterTopModuleWidget::onLogicModified(vtkObject* vtkNotUsed(caller), vtkObject* callData)

@@ -52,7 +52,7 @@
      </font>
     </property>
     <property name="text">
-     <string>最近分析</string>
+     <string>近期分析</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_le1">
@@ -954,7 +954,7 @@
         <x>0</x>
         <y>0</y>
         <width>2000</width>
-        <height>222</height>
+        <height>28</height>
        </rect>
       </property>
       <property name="minimumSize">
@@ -1066,7 +1066,7 @@
         <x>0</x>
         <y>0</y>
         <width>1800</width>
-        <height>222</height>
+        <height>28</height>
        </rect>
       </property>
       <property name="minimumSize">

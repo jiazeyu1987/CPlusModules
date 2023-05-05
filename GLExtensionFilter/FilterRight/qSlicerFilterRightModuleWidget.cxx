@@ -781,7 +781,7 @@ void qSlicerFilterRightModuleWidget::DoAnalyseParasFromPatientModule() {
 	}
 	
 	//只有从分析界面过来的操作会触发加载数据
-	if (val3 && strcmp(val3, "1") == 0) 
+	if (val3 && strcmp(val3, "1") == 0 || !val3) 
 	{
 		DoResetUI();
 		qvtkReconnect(logic(), vtkCommand::ModifiedEvent, this, SLOT(onLogicModified(vtkObject*, vtkObject*)));

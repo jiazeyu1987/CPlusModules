@@ -133,6 +133,7 @@ void qSlicerFilterLeftModuleWidget::setup()
 	QObject::connect(d->btn_import, &QPushButton::clicked, this, &qSlicerFilterLeftModuleWidget::onLoadPatientFiles);
 	QObject::connect(d->btn_delete, &QPushButton::clicked, this, &qSlicerFilterLeftModuleWidget::OnRemoveClick);
 	QObject::connect(d->btn_dti, &QPushButton::clicked, this, &qSlicerFilterLeftModuleWidget::onLoadDTI);
+	d->btn_dti->hide();
 }
 
 void qSlicerFilterLeftModuleWidget::onLoadDTI() {
